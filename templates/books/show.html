@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <p>Show book</p>
+<div>
+  <p>{{book.title}}</p>
+  <hr>
+  <p>{{book.genre}}</p>
+  <p>{{book.publisher}}</p>
+  <p>{{book.author.full_name()}}</p>
+</div>
 
 {% endblock %}
